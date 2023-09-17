@@ -1,0 +1,45 @@
+{
+    "name": "mohamed7sameer/backpack-image-traits",
+    "description": "Backpack for Laravel helper traits for processing image upload fields (including within repeatable fields)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Samir",
+            "email": "info@mohammed-samir.com",
+            "homepage": "https://mohammed-samir.com"
+        }
+    ],
+    "homepage": "https://github.com/mohamed7sameer/backpack-image-traits",
+    "keywords": [
+        "Laravel", "Backpack", "Backpack for Laravel", "Backpack Addon", "BackpackImageTraits"
+    ],
+    "require": {
+        "illuminate/support": "*",
+        "intervention/image": "*",
+        "backpack/crud": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "orchestra/testbench": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "mohamed7sameer\\BackpackImageTraits\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "mohamed7sameer\\BackpackImageTraits\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --testdox"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mohamed7sameer\\BackpackImageTraits\\AddonServiceProvider"
+            ]
+        }
+    }
+}
