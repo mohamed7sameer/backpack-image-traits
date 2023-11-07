@@ -48,7 +48,10 @@ trait HasImageFields
                 return $callback($filename);
             }
 
-            return Storage::disk($disk)->url($destination_path.'/'.$filename);
+            // return Storage::disk($disk)->url($destination_path.'/'.$filename);
+            $storage = Storage::disk($disk)->url($destination_path.'/'.$filename);
+            $storage = str_replace(config('app.url'),'',$storage);
+            return $storage ;
         }
 
         return $post_value;
