@@ -18,7 +18,7 @@ you'll only have to add a function with one line of code to process image fields
 This package requires
 * PHP 7.2+
 * [intervention-image:^2.5][link-intervention-image]
-* [backpack/crud:4.1.*][link-backpack]
+* [backpack/crud:6.*][link-backpack]
 
 
 ### Installation
